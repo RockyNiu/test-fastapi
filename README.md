@@ -2,22 +2,26 @@
 This is a quick guide based on the wonderful [turotial](https://fastapi.tiangolo.com/tutorial/) on FastAPI.
 
 ## First Shot
-**Read the [first_shot/main.py](./first_shot/main.py), it might only take about one hour for experienced engineer.**
+**Read the [first_shot/main.py](./first_shot/main.py) (about 300+ lines), it might only take about one hour for experienced engineer.**
 
 - Prepare
   - Some knowledge of OpenAPI(https://www.openapis.org/)
   - Set python version >= 3.10 (Python 3.11.0b4 is used in this repo)
   - If you are using [pipenv](https://pipenv.pypa.io/en/latest/)
-    `cd first_shot && pipenv install`
+    `pipenv install`
     Otherwise,
-    > pip install fastapi # FastAPI 0.99.0 or above
-    > pip install python-multipart # For using Form, File, UploadFile
+    ```
+    pip install fastapi # FastAPI 0.99.0 or above
+    pip install python-multipart # For using Form, File, UploadFile
+    ```
   - uvicorn main:app --reload # to watch the changes, visit localhost:8000 and localhost:8000/docs
 
 - Testing
-  - > pip install pytest
-    > pip install httpx
-    > pytest
+  - ```
+    pip install pytest
+    pip install httpx
+    pytest
+    ```
 
 - More Notes
   - [Bigger Applications - Multiple Files](https://fastapi.tiangolo.com/tutorial/bigger-applications/#bigger-applications-multiple-files)
